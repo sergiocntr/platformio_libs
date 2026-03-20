@@ -1,6 +1,6 @@
 {
   "name": "platformio_libs",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Librerie condivise per progetti ESP8266/ESP32 con gestione MQTT e versionamento",
   "repository": {
     "type": "git",

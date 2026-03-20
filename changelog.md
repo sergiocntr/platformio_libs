@@ -1,4 +1,4 @@
-## VERSIONE 1.3.0
+## VERSIONE 1.4.0
 - Aggiunto library.json per ogni libreria
 - Aggiunta cartella `shared_config1 per dichiarazioni condivise
 - altri piccoli fix
