@@ -1,0 +1,7 @@
+{
+  "name": "EspNowManager",
+  "version": "1.0.0",
+  "description": "ESP-NOW wrapper",
+  "frameworks": "arduino",
+  "platforms": ["espressif8266", "espressif32"]
+}

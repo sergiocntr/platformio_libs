@@ -1,0 +1,7 @@
+{
+  "name": "udpLogger",
+  "version": "1.0.0",
+  "description": "UDP Logger",
+  "frameworks": "arduino",
+  "platforms": ["espressif8266", "espressif32"]
+}
