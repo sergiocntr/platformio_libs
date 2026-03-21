@@ -4,7 +4,7 @@
 
 #define LIB_VERSION_MAJOR 1
 #define LIB_VERSION_MINOR 4
-#define LIB_VERSION_PATCH 2
+#define LIB_VERSION_PATCH 3
 
 #define STRINGIFY(x) #x
 #define TOSTRING(x) STRINGIFY(x)

@@ -1,4 +1,4 @@
-## VERSIONE 1.4.2
+## VERSIONE 1.4.3
 - altri piccoli fix
 ## VERSIONE 1.4.0
 - Aggiunto library.json per ogni libreria
