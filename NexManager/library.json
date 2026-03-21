@@ -2,7 +2,18 @@
   "name": "NexManager",
   "version": "1.0.0",
   "description": "Lightweight non-blocking Nextion display manager",
-  "keywords": ["nextion", "display", "hmi"],
+  "keywords": [
+    "nextion",
+    "display",
+    "hmi"
+  ],
   "frameworks": "arduino",
-  "platforms": ["espressif8266", "espressif32"]
+  "platforms": [
+    "espressif8266",
+    "espressif32"
+  ],
+  "build": {
+    "srcDir": ".",
+    "includeDir": "."
+  }
 }

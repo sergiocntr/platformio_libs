@@ -1,11 +1,12 @@
-## VERSIONE 1.4.3
-- altri piccoli fix
+## VERSIONE 1.5.0
+**Distibuzione librerie come packages**
+- piu comodo da gestire in PlatformIO
+- ogni progetto scarica solo la libreria che serve ,non tutto il repo
+- ogni progetto puo usare una specifica verione della libreria
 ## VERSIONE 1.4.0
 - Aggiunto library.json per ogni libreria
-- Aggiunta cartella `shared_config1 per dichiarazioni condivise
+- Aggiunta cartella `shared_config` per dichiarazioni condivise
 - altri piccoli fix
-
-
 ## VERSIONE 1.2.0
 ### Modifica nella libreria ESPManager
 - Rimosse tutte le dipendenze esterne — niente impostazioni_chrono.h, NexManager.h, stato, EspPacket, broadcastAddress, gatewayAddress. 

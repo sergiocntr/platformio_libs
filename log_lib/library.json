@@ -4,5 +4,9 @@
   "description": "UDP/Serial logging library for Arduino/ESP projects",
   "keywords": ["logging", "udp", "debug"],
   "frameworks": "arduino",
-  "platforms": ["espressif8266", "espressif32"]
+  "platforms": ["espressif8266", "espressif32"],
+  "build": {
+    "srcDir": ".",
+    "includeDir": "."
+  }
 }

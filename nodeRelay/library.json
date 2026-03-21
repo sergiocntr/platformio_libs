@@ -4,5 +4,9 @@
   "description": "Simple relay control library for Arduino/ESP",
   "keywords": ["relay", "gpio"],
   "frameworks": "arduino",
-  "platforms": ["espressif8266", "espressif32"]
+  "platforms": ["espressif8266", "espressif32"],
+    "build": {
+    "srcDir": ".",
+    "includeDir": "."
+  }
 }
