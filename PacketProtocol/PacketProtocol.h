@@ -3,7 +3,7 @@
 
 #include <stddef.h>
 #include <stdint.h>
-
+#include <devices.h>
 /**
  * @file PacketProtocol.h
  * @brief Standardized communication buffer protocol.
