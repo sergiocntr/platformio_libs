@@ -80,14 +80,33 @@ typedef enum {
     TYPE_STATUS  = 0x01,   // generic status  (future use)
     TYPE_COMMAND = 0x02,   // command frame   (future use)
     TYPE_DHT     = 0x03,   // DHT22   → struct dhtData
+    TYPE_METEO   = 0x03,   // Alias for 0x03 used in ESPmeteo
     TYPE_DS18    = 0x04,   // DS18B20 → struct ds18Data
     TYPE_BME     = 0x05,   // BME280  → struct bmeData
     TYPE_PZEM    = 0x06,   // PZEM    → struct EneMainData
-    TYPE_TENDE   = 0x07,   // Blinds  → struct tendeData
+    TYPE_TENDE   = 0x07,   // Blinds  → struct rendeData
     TYPE_UNKNOWN = 0xFF
 } PacketType;
 
 // ── Payload structures ────────────────────────────────────────────────────────
+
+#pragma pack(push, 1)
+/**
+ * @brief Structure for weather data telemetry.
+ * Total size: 16 bytes.
+ */
+struct meteoData {
+  uint8_t deviceID;         // Unique device identifier
+  int16_t humidityBMP;      // Humidity (float * 128)
+  int16_t temperatureBMP;   // Temperature (float * 128)
+  int16_t externalPressure; // Atmospheric pressure (float * 128)
+  uint16_t battery;         // Battery voltage in mV
+  uint16_t moisture;        // Soil moisture raw ADC value
+  uint8_t padding[3];       // 3-byte padding to maintain 16-byte total size
+  uint8_t counter;          // Record sequence counter
+  uint8_t checksum;         // Integrity check byte
+};
+#pragma pack(pop)
 
 #pragma pack(push, 1)
 /**
