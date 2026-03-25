@@ -1,4 +1,4 @@
-#include "EspNowManager/EspNowManager.h"
+#include "EspNowManager.h"
 
 namespace EspNowManager {
 

@@ -1,6 +1,6 @@
 {
   "name": "EspNowManager",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESP-NOW wrapper",
   "frameworks": "arduino",
   "platforms": [
