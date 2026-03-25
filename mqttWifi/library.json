@@ -1,6 +1,6 @@
 {
   "name": "mqttWifi",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "WiFi + MQTT + ESPNow connection manager for ESP8266/ESP32",
   "keywords": [
     "mqtt",

@@ -1,6 +1,7 @@
 #include "mqttWifi.h"
 #include "IPAddress.h"
 #include "PubSubClient.h"
+#include "log_lib.h"
 #include "mqttWifi_transport.h"
 #include "topic.h"
 
@@ -119,6 +120,9 @@ void logMotivoSpegnimento(MotivoSpegnimento motivo) {
     break;
   case SHUTDOWN_FROM_MQTT:
     LOG_INFO("SHUTDOWN FROM MQTT");
+    break;
+  case ONLY_DISCONNETS:
+    LOG_INFO("ONLY DISCONNECTS: non entro in deep sleep");
     break;
   default:
     LOG_WARN("SCONOSCIUTO");
@@ -334,7 +338,7 @@ MotivoSpegnimento gestisciConnessione() {
       return WIFI_TIMEOUT_CONNESSIONE;
     }
 
-    delay(1000); // ✅ aspetta prima del prossimo tentativo
+    delay(500); // ✅ aspetta prima del prossimo tentativo
   }
 
   // ── MQTT ──────────────────────────────────────────────
