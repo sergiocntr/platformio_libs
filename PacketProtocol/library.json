@@ -1,6 +1,6 @@
 {
   "name": "PacketProtocol",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Binary packet protocol for sensor data transmission",
   "keywords": ["protocol", "binary", "mqtt"],
   "frameworks": "arduino",
